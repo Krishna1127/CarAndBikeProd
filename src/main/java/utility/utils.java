@@ -21,7 +21,7 @@ public class utils {
 	public static void Launchbrowser() {
 		
 		System.setProperty("webdriver.chrome.driver",
-				Path+"//chromedriver.exe");
+				Path+"//chromedriver");
 		 driver = new ChromeDriver();
 		 driver.manage().window().maximize();
 	}
@@ -30,7 +30,7 @@ public class utils {
 		if (BrowserName.equalsIgnoreCase("Chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",
-					Path+"//chromedriver.exe");
+					Path+"//chromedriver");
 			driver = new ChromeDriver();
 		} else if (BrowserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
