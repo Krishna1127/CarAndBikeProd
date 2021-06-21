@@ -17,10 +17,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class utils {
 	public static WebDriver driver;
 	
+	 static String Path=System.getProperty("user.dir");
 	public static void Launchbrowser() {
 		
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Eclipse new Workspace\\CarAndBikeProd\\chromedriver.exe");
+				Path+"//chromedriver.exe");
 		 driver = new ChromeDriver();
 		 driver.manage().window().maximize();
 	}
@@ -29,7 +30,7 @@ public class utils {
 		if (BrowserName.equalsIgnoreCase("Chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",
-					"D:\\Eclipse new Workspace\\CarAndBikeProd\\chromedriver.exe");
+					Path+"//chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (BrowserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
